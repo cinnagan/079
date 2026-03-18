@@ -2215,7 +2215,7 @@ async function getAIReply(userText) {
   // keep last 24 turns to stay within context
   var trimmed = conversationHistory.slice(-24);
   try {
-    var resp = await fetch('https://delicate-firefly-3d3f.loganhenning3.workers.dev/', {
+    var resp = await fetch('https://delicate-firefly-3d3f.loganhenning3.workers.dev', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
